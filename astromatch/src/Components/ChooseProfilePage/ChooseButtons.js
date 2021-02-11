@@ -4,7 +4,7 @@ import Button from "@material-ui/core/Button";
 import BotaoX from "@material-ui/icons/Clear";
 import BotaoCoracao from "@material-ui/icons/FavoriteBorder";
 import { createMuiTheme, MuiThemeProvider } from "@material-ui/core";
-import axios from 'axios'
+
 const MyTheme = createMuiTheme({
     palette: {
       primary: {

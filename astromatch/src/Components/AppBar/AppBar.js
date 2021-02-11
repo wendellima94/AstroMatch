@@ -30,14 +30,25 @@ const AppBarContainer = styled.div`
     padding: 10px;
 `
 
+const Buttons = styled.button `
+  height: 40px;
+  width: 70px;
+  border: 1px solid black;
+  border-radius: 8px;
+  outline-style: none;
+  font-size: 14px;
+  text-align: center;
+  color: orangered;
+  background-color: ghostwhite;
+`
 
 function AppBar(props) {
     return (
         <MuiThemeProvider theme={MyTheme}>
         <AppBarContainer>
-            <button onClick={props.goToChooseProfilePage}>Escolher</button>
+            <Buttons onClick={props.goToChooseProfilePage}>Escolher</Buttons>
             <PalavraAstro>astromatch</PalavraAstro>
-            <button onClick={props.goToMatchListPage} >Lista</button>
+            <Buttons onClick={props.goToMatchListPage} >Lista</Buttons>
         </AppBarContainer>
         </MuiThemeProvider>
     )

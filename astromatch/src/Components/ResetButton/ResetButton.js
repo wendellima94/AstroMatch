@@ -1,5 +1,17 @@
 import React from 'react';
-import axios from 'axios'
+import axios from 'axios';
+import styled from 'styled-components';
+
+const ButtonReset = styled.button `
+  border: 1px solid black;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+  height: 40px;
+  width: 70px;
+  color: orangered;
+  background-color: ghostwhite;
+`
 
 
 function ResetButton() {
@@ -8,10 +20,9 @@ function ResetButton() {
       .then(response => {})
     
     }
-
     return (
         <div>
-            <button onClick={onClickReset}>Reset Button</button>
+            <ButtonReset onClick={onClickReset}>Limpar Matches</ButtonReset>
         </div>
     )
 }

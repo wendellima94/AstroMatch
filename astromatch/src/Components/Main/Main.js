@@ -10,7 +10,7 @@ const MainContainer = styled.div`
     width: 420px;
     height: 640px;
     margin: 30px;
-    
+
 `
 
 function Main(){

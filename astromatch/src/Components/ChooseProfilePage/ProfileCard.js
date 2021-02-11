@@ -10,6 +10,7 @@ const ProfilePicture = styled.img`
     width:100%;
     display: block;
     max-height: 310px;
+
 `
 const ProfileInfo = styled.div`
     padding: 16px;
